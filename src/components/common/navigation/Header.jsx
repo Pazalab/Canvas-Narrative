@@ -1,6 +1,12 @@
 import { Link, NavLink } from "react-router-dom"
+import { TbMenu4 } from "react-icons/tb";
+import { useContext } from "react";
+import { sidebarContext } from "./navContext";
 
 const Header = () => {
+  // eslint-disable-next-line no-unused-vars
+  const [sidebarStatus, setSidebarStatus] = useContext(sidebarContext);
+
   return (
     <div className="header-section">
               <div className="inner-row">
@@ -21,6 +27,10 @@ const Header = () => {
                                  </div>
                                  <div className="header-content-column">
                                              <Link to={"/contact-us"} className="action-btn">Get in Touch</Link>
+
+                                             <span className="menu-btn" onClick={() => setSidebarStatus(true)}>
+                                                    <TbMenu4 />
+                                             </span>
                                  </div>
                        </div>
               </div>

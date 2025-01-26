@@ -1,5 +1,7 @@
 import { Link } from 'react-router-dom'
 import { Typewriter } from 'react-simple-typewriter'
+//import { LuMoveUpRight } from "react-icons/lu";
+import { RiPlayLargeFill } from "react-icons/ri";
 
 const HeroSection = () => {
   return (
@@ -15,14 +17,17 @@ const HeroSection = () => {
                                       </span></h1>
 
                                       <div className="hero-row">
-                                                  <div className="call-to-action">
-                                                            <Link to={"/"}>
-                                                                   <img src="" alt="" />
-                                                             </Link>
+                                                  <div className="action-column">
+                                                           {/* <Link to={""}>Explore Services <span><LuMoveUpRight /></span></Link> */}
+                                                           <Link className='link-btn' to={"/"}><span className="text">Read More About Us</span> <span className="cover-shadow"></span> </Link>
+                                                            <div className="action-vid">
+                                                                      <span><RiPlayLargeFill /></span>
+                                                            </div>
                                                   </div>
                                                   <div className="hero-description">
                                                               <div className="hero-description-box">
-                                                                        <h2>Achieve powerful results with digital ideas</h2>
+                                                                        <h2><span>Achieve exceptional Results</span> with bold digital innovation.</h2>
+                                                                        <p>You deserve an online presence that sets you apart. At Canvas Narrative, we provide tailored solutions designed to elevate your brand and deliver outstanding results.</p>
                                                               </div>
                                                   </div>
                                       </div>
