@@ -12,8 +12,8 @@ const Header = () => {
               <div className="inner-row">
                        <div className="header-content">
                                  <div className="header-content-column">
-                                            <Link to={"/"}>
-                                                       <h2>Canvas Narrative</h2>
+                                            <Link to={"/"} className="logo">
+                                                       <h2>Canvas <span>Narrative</span><span className="dot"></span></h2>
                                              </Link>
                                              <nav>
                                                        <ul>

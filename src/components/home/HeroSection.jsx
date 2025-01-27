@@ -19,7 +19,7 @@ const HeroSection = () => {
                                       <div className="hero-row">
                                                   <div className="action-column">
                                                            {/* <Link to={""}>Explore Services <span><LuMoveUpRight /></span></Link> */}
-                                                           <Link className='link-btn' to={"/"}><span className="text">Read More About Us</span> <span className="cover-shadow"></span> </Link>
+                                                           <Link className='link-btn' to={"/"}><span className="text">Explore More</span> <span className="cover-shadow"></span> </Link>
                                                             <div className="action-vid">
                                                                       <span><RiPlayLargeFill /></span>
                                                             </div>
