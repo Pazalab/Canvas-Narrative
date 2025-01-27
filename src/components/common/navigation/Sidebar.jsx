@@ -41,16 +41,16 @@ const Sidebar = () => {
              <div className="sidebar-overlay"></div>
              <div className="sidebar-content">
                        <div className="sidebar-header">
-                                  <Link className="sidebar-logo">
-                                            <h2>Canvas Narrative</h2>
+                                  <Link className="sidebar-logo logo">
+                                              <h2>Canvas <span>Narrative</span><span className="dot"></span></h2>
                                   </Link>
 
-                                  <span onClick={() => setSidebarStatus(false)}><IoCloseOutline /></span>
+                                  <span className="close-btn" onClick={() => setSidebarStatus(false)}><IoCloseOutline /></span>
                        </div>
                        <div className="sidebar-nav">
                                   <ul>
                                          <li><NavLink to={"/"}>Home</NavLink></li>
-                                         <li><NavLink to={"/about"}>About</NavLink></li>
+                                         <li><NavLink to={"/about-us"}>About</NavLink></li>
                                          <li><NavLink to={"/services"}>Services</NavLink></li>
                                          <li><NavLink to={"/portfolio"}>Portfolio</NavLink></li>
                                          <li><NavLink to={"/insights"}>Insights</NavLink></li>

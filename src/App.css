@@ -211,7 +211,7 @@ button{
        color: #222;
 }
 
-.sidebar-header span{
+.sidebar-header span.close-btn{
    width: 45px;
    height: 45px;
    background: rgba(248, 234, 230, 0.5);
@@ -382,25 +382,6 @@ footer{
       font-weight: 300;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 @media(max-width: 1090px){
       .sidebar-section{
             visibility: visible;
@@ -411,6 +392,13 @@ footer{
       .menu-btn{
             display: flex;
       }
+      .footer-content{
+             grid-template-columns: 1fr;
+             gap: 30px;
+      }
+      .footer-column-grid{
+               grid-template-columns: 1fr 1fr;
+      }
 }
 
 @media(max-width: 768px){
@@ -419,5 +407,8 @@ footer{
      }
      .sidebar-content{
        width: 100%;
+     }
+     .footer-column-grid{
+          grid-template-columns: 1fr;
      }
 }
