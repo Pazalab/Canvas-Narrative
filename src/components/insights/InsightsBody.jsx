@@ -1,26 +1,24 @@
+import { TfiSearch } from "react-icons/tfi";
 import { Link } from "react-router-dom"
 import { BsArrowUpRight } from "react-icons/bs";
 import blog1 from "../../assets/blog1.jpg"
 import blog2 from "../../assets/blog2.jpg"
 import blog3 from "../../assets/blog3.jpg"
 
-const BlogSection = () => {
+const InsightsBody = () => {
   return (
-    <div className="blog-section">
-              <div className="inner-row">
-                         <div className="blog-section-content">
-                                        <div className="blog-intro">
-                                                      <div className="blog-intro-column">
-                                                                  <h3>Latest News</h3>
-                                                                   <h2>Insights on <span>Digital Innovation</span> and Growth</h2>
-                                                      </div>
-                                                      <div className="blog-intro-column">
-                                                                 <p>Explore the latest trends, strategies, and tools driving  and helping businesses thrive in a rapidly evolving digital landscape.</p>
-                                                                 
-                                                                 <Link to={"/insights"} className="link-btn"><span className="text">More Articles</span> <span className="cover-shadow"></span></Link>
-                                                      </div>
-                                        </div>
-                                        <div className="blog-section-row">
+    <div className="insights-body">
+               <div className="inner-row">
+                          <div className="insights-body-content">
+                                    <div className="insights-intro">
+                                                <h1>Insights on Digital News & Trends</h1>
+                                                 <div className="search-area">
+                                                              <span><TfiSearch /></span>
+                                                             <input type="text" placeholder="Search" />
+                                                 </div>
+                                    </div>
+
+                                    <div className="blog-section-row">
                                                    <div className="blog-moja">
                                                              <div className="blog-image">
                                                                        <img src={blog1} alt="" />
@@ -49,10 +47,10 @@ const BlogSection = () => {
                                                              </div>
                                                    </div>
                                         </div>
-                         </div>
-              </div>
+                          </div>
+               </div>
     </div>
   )
 }
 
-export default BlogSection
+export default InsightsBody

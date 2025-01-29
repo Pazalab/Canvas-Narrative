@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { Typewriter } from 'react-simple-typewriter'
-//import { LuMoveUpRight } from "react-icons/lu";
+import { LuMoveUpRight } from "react-icons/lu";
 import { RiPlayLargeFill } from "react-icons/ri";
 
 const HeroSection = () => {
@@ -19,7 +19,7 @@ const HeroSection = () => {
                                       <div className="hero-row">
                                                   <div className="action-column">
                                                            {/* <Link to={""}>Explore Services <span><LuMoveUpRight /></span></Link> */}
-                                                           <Link className='link-btn' to={"/"}><span className="text">Explore More</span> <span className="cover-shadow"></span> </Link>
+                                                           <Link className='link-btn' to={"/services"}><span className="text">Explore Services</span> <span className="cover-shadow"></span> <span className="icon"><LuMoveUpRight /></span></Link>
                                                             <div className="action-vid">
                                                                       <span><RiPlayLargeFill /></span>
                                                             </div>

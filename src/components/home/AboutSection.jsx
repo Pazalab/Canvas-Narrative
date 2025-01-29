@@ -4,6 +4,7 @@ import creativity from "../../assets/creativity.png"
 import collaboration from "../../assets/collaborate.png"
 import customization from "../../assets/customization.png"
 import innovation from "../../assets/innovation.png"
+import { LuMoveUpRight } from "react-icons/lu";
 
 const AboutSection = () => {
   return (
@@ -19,7 +20,7 @@ const AboutSection = () => {
                                             
                                                            <p>We prioritize building long-lasting relationships with our clients, rooted in trust and collaboration by fostering open communication and a strong rapport throughout every business engagement. Our goal is to be more than a service provider—we strive to be your trusted partner in achieving sustained success.</p>
 
-                                                           <Link to={"/"} className="link-btn"> <span className="text">Read More About Us</span> <span className="cover-shadow"></span></Link>
+                                                           <Link to={"/about-us"} className="link-btn"> <span className="text">More About Us</span> <span className="cover-shadow"></span> <span className="icon2"><LuMoveUpRight /></span></Link>
                                                 </div>
                                     </div>
 

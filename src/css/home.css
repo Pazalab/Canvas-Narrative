@@ -18,6 +18,7 @@
 .hero-texts h1 span{
     font-weight: 700;
     color: var(--main-color);
+    position: relative;
 }
 .hero-texts .outerbox{
     overflow: hidden;
@@ -184,11 +185,21 @@
     -o-transition: all 0.7s ease;
     font-size: 16px;
 }
-.link-btn span.text{
+.link-btn span.text,
+.link-btn span.icon,
+.link-btn span.icon2{
      position: relative;
      z-index: 10;
 }
-
+.link-btn span.icon{
+     display: flex;
+     margin-top: 6px !important;
+}
+.link-btn span.icon2{
+        margin-top: 3px;
+        display: flex;
+        margin-left: 4px
+}
 .link-btn span.cover-shadow{
        position: absolute;
        left: 50%;
@@ -224,7 +235,8 @@
 .link-btn:hover{
      background-color: var(--main-color);
 }
-.link-btn:hover span.text{
+.link-btn:hover span.text,
+.link-btn:hover span.icon2{
     color: white;
 }
 
