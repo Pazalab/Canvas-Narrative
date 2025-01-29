@@ -25,7 +25,7 @@ const Header = () => {
                                                        </ul>
                                              </nav>
                                  </div>
-                                 <div className="header-content-column">
+                                 <div className="header-content-column adjust">
                                              <Link to={"/contact-us"} className="action-btn">Get in Touch</Link>
 
                                              <span className="menu-btn" onClick={() => setSidebarStatus(true)}>

@@ -69,6 +69,10 @@ button{
    gap: 50px;
 }
 
+.header-content-column.adjust{
+       gap: 20px;
+}
+
 .logo h2{
       font-size: 20px;
       color: #222;
